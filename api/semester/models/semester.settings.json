@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "semesters",
+  "info": {
+    "name": "Semester"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string"
+    },
+    "supervisor": {
+      "type": "string"
+    },
+    "year": {
+      "type": "datetime"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

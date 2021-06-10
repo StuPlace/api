@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "semesters",
+  "collectionName": "classes",
   "info": {
-    "name": "Semester"
+    "name": "Class"
   },
   "options": {
     "increments": true,
@@ -18,19 +18,19 @@
     "code": {
       "type": "string"
     },
-    "supervisor": {
+    "hours": {
       "type": "string"
     },
-    "year": {
-      "type": "datetime"
+    "teacher_name": {
+      "type": "string"
+    },
+    "semester": {
+      "model": "semester",
+      "via": "class"
     },
     "user": {
       "plugin": "users-permissions",
       "model": "user"
-    },
-    "class": {
-      "via": "semester",
-      "model": "class"
     }
   }
 }

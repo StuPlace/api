@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "classes",
   "info": {
-    "name": "Class"
+    "name": "Class",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -31,6 +32,12 @@
     "user": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "coordinator_name": {
+      "type": "string"
+    },
+    "coordinator_phone": {
+      "type": "string"
     }
   }
 }
